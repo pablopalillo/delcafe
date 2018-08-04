@@ -1,0 +1,12 @@
+/*This is for IE*/
+.header-wrapper{
+	background: #111;
+}
+body{
+	font-size: 18px;	
+}
+.single .entry-header, .page .entry-header{
+	min-height: 270px;
+	background-color: #000;
+	background-size: cover;
+}

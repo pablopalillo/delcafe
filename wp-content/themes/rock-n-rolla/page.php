@@ -21,7 +21,17 @@ while ( have_posts() ) : the_post();
 		<?php the_post_thumbnail( 'single-post-thumbnail', array( 'class' => 'single-post-thumbnail' ) ); ?>
         <header class="entry-header" >
             <div class="black-overlay">
-                <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+                <?php  if (is_front_page() || is_home()) : ?>
+
+                    <div class="logo-container text-center">
+                        <img src="<?php echo get_template_directory_uri().'/assets/images/logo500.svg' ?>"
+                            class="img-fluid custom-logo" alt="Logo Del cafe">     
+                    </div>
+                    
+                <?php else:    
+                        the_title( '<h1 class="entry-title">', '</h1>' ); 
+                endif;
+                ?>
             </div>
         </header><!-- .entry-header -->
     </div>

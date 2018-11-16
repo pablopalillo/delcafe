@@ -1498,6 +1498,41 @@ object {
 .gallery-caption {
 	display: block;
 }
+
+
+/** CUSTOM **/
+.entry-meta-info {
+	margin-right: 10px;
+}
+
+.entry-meta-info i {
+	margin-right: 5px;
+}
+
+.custom-logo {
+	width: 150px;
+	height: auto;
+	opacity: 0.7;
+}
+
+
+#info-list {
+  list-style: none;
+}
+
+
+#info-list .entry-meta-info i {
+	margin-right: 10px;
+}
+
+
+.search-page-form {
+	margin: 50px 0;
+	text-align: center;
+}
+
+/** END CUSTOM **/
+
 @media only screen and (min-width:992px){
 	img.single-post-thumbnail{
 		top:-50%;

@@ -26,20 +26,14 @@
                         } else {
                             the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
                         }
-            
-                    if ( 'post' === get_post_type() ) : ?>
-                    <div class="entry-meta">
-                        <?php rock_n_rolla_posted_on(); ?>
-                    </div><!-- .entry-meta -->
-                    <?php
-                    endif; ?>
+                  ?>
                 </header><!-- .entry-header -->
         
                 <?php
                     the_excerpt();
                 ?>
                 <div class="button-container">
-                    <a href="<?php the_permalink('') ?>" class="read_more"><?php esc_html_e( 'Read More', 'rock-n-rolla' ); ?></a>
+                    <a href="<?php the_permalink('') ?>" class="read_more"><?php esc_html_e( 'Leer más', 'rock-n-rolla' ); ?></a>
                 </div>
             </div><!-- .entry-content -->
         </div><!--post-details-->

@@ -1465,13 +1465,13 @@ function the_archive_title( $before = '', $after = '' ) {
 function get_the_archive_title() {
 	if ( is_category() ) {
 		/* translators: Category archive title. 1: Category name */
-		$title = sprintf( __( 'Category: %s' ), single_cat_title( '', false ) );
+		$title = sprintf( single_cat_title( '', false ) );
 	} elseif ( is_tag() ) {
 		/* translators: Tag archive title. 1: Tag name */
-		$title = sprintf( __( 'Tag: %s' ), single_tag_title( '', false ) );
+		$title = sprintf(  single_tag_title( '', false ) );
 	} elseif ( is_author() ) {
 		/* translators: Author archive title. 1: Author name */
-		$title = sprintf( __( 'Author: %s' ), '<span class="vcard">' . get_the_author() . '</span>' );
+		$title = sprintf( '<span class="vcard">' . get_the_author() . '</span>' );
 	} elseif ( is_year() ) {
 		/* translators: Yearly archive title. 1: Year */
 		$title = sprintf( __( 'Year: %s' ), get_the_date( _x( 'Y', 'yearly archives date format' ) ) );

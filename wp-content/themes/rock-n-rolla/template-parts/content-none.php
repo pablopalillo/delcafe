@@ -12,7 +12,7 @@
 
 <section class="no-results not-found">
 	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'rock-n-rolla' ); ?></h1>
+		<h1 class="page-title"><?php esc_html_e( '¡Upps! Al parecer no encontramos lo que buscabas', 'rock-n-rolla' ); ?></h1>
 	</header><!-- .page-header -->
 
 	<div class="page-content">
@@ -23,16 +23,23 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'rock-n-rolla' ); ?></p>
-			<?php
-				get_search_form();
+			<p>Puedes verificar que tus palabras de búsqueda sean correctas.</p>
 
-		else : ?>
+			<p>Si definitivamente no encontraste lo que buscabas, hay muchos lugares con características similares que puedes encontrar en nuestro directorio.</p>
 
-			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'rock-n-rolla' ); ?></p>
-			<?php
-				get_search_form();
+			<div class="search-page-form">
+				<?php get_search_form(); ?>	
+			</div>
+		
+		<?php else : ?>
 
-		endif; ?>
+			<p>Puedes verificar que tus palabras de búsqueda sean correctas.</p>
+			
+			<p>Si definitivamente no encontraste lo que buscabas, hay muchos lugares con características similares que puedes encontrar en nuestro directorio.</p>
+
+			<div class="search-page-form">
+				<?php get_search_form(); ?>	
+			</div>
+		<?php endif; ?>
 	</div><!-- .page-content -->
 </section><!-- .no-results -->

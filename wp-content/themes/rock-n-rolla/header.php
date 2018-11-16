@@ -45,30 +45,19 @@
                     <div class="row">
                     	<div class="col-md-6">
                             <div class="site-branding">
+
+                        <!--        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="custom-logo-link"
+                                    rel="home" itemprop="url">
+                                                             
+                                </a> -->
                             
-						   		<?php 
-									if ( function_exists( 'the_custom_logo' ) ) {
-										the_custom_logo();
-									}
-								?>
 								<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 								<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+
                                 
                             </div><!-- .site-branding -->
                         </div>
-                        <div class="col-md-6">
-                        	<ul id="mobile-icon" class="social-media">  
-                                <li>
-                                    <div class="search-icon-wrapper">
-                                        <span id="search-icon"><i class="fa fa-search"></i></span>
-                                    </div>
-                                </li>                                                  
-                            </ul>
-                            <div id="show-icons">
-                                <i class="fa fa-angle-down"></i>
-                                <i class="fa fa-angle-up hide-icons"></i>
-                            </div>
-                        </div>
+
                     </div>
                     
                 </div>
@@ -78,8 +67,24 @@
                 <div class="container">
                     <nav id="site-navigation" class="main-navigation" role="navigation">
                         <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><i class="fa fa-bars"></i></button>
-                            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+                        <?php wp_nav_menu( array( 'theme_location' => 'primary',
+                                                'menu_id' => 'primary-menu', 'menu_class' => 'col-md-10') ); ?>
+                        <!-- SEARCH -->
+                        <ul id="mobile-icon" class="navbar-left social-media col-md-2 hidden-xs">  
+                            <li>
+                                <div class="search-icon-wrapper">
+                                    <span id="search-icon"><i class="fa fa-search"></i></span>
+                                </div>
+                            </li>                                                  
+                        </ul>
+                        <div id="show-icons">
+                            <i class="fa fa-angle-down hidden-xs"></i>
+                            <i class="fa fa-angle-up hide-icons hidden-xs"></i>
+                        </div>
                     </nav><!-- #site-navigation -->
+
+                        
+                        
                 </div>
             </div>
         </div>

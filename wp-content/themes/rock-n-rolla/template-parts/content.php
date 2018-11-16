@@ -38,7 +38,14 @@
             
                     if ( 'post' === get_post_type() ) : ?>
                     <div class="entry-meta">
-                        <?php rock_n_rolla_posted_on(); ?>
+                        <?php //rock_n_rolla_posted_on(); ?>
+                        
+                        <span class="entry-meta-info"><i class="fa fa-bullseye"></i><?php echo getAdvanceLabel("tipo") ?></span>
+
+                        <span class="entry-meta-info"><i class="fa fa-music"></i><?php echo getAdvanceLabel("genero") ?></span>
+
+                        <span class="entry-meta-info"><i class="fa fa-dollar"></i><?php echo getAdvanceLabel("cover") ?></span>
+
                     </div><!-- .entry-meta -->
                     <?php
                     endif; ?>
@@ -48,7 +55,7 @@
                     the_excerpt();
                 ?>
                 <div class="button-container">
-                    <a href="<?php the_permalink('') ?>" class="read_more"><?php esc_html_e( 'Read More', 'rock-n-rolla' ); ?></a>
+                    <a href="<?php the_permalink('') ?>" class="read_more"><?php esc_html_e( 'Leer más', 'rock-n-rolla' ); ?></a>
                 </div>
             </div><!-- .entry-content -->
         </div><!--post-details-->

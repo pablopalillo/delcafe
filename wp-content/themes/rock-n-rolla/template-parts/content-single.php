@@ -16,6 +16,11 @@
 		<?php
 			the_content();
 		?>
+		
+		<?php if(!empty(getAdvanceLabel("tipo"))) {
+ 			get_template_part( 'template-parts/content-single', ('info') );
+		} ?>
+
 		<?php 
 			 wp_link_pages( array(
                 'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'rock-n-rolla' ),

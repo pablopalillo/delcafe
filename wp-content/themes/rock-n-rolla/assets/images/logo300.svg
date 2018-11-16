@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="275.98" height="191.04" version="1.1" viewBox="0 0 73.02 50.546" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+ <metadata>
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g transform="matrix(1.8276 0 0 1.3298 -35.159 -343.18)">
+  <path d="m37.938 258.38a19.897 18.425 24.408 0 0-17.465 12.038 19.897 18.425 24.408 0 0 12.825 24.108 19.897 18.425 24.408 0 0 24.658-10.817 19.897 18.425 24.408 0 0-12.825-24.108 19.897 18.425 24.408 0 0-7.1934-1.2212z" fill="#d15d10" stroke="#0c0807" stroke-linejoin="round" stroke-width=".63724" style="paint-order:normal"/>
+  <text transform="matrix(1.0359 -.11365 .12369 .95179 0 0)" x="-7.4948115" y="287.8678" fill="#ffffff" font-family="'Josefin Sans'" font-size="9.9913px" letter-spacing="0px" stroke-width="0" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="-7.4948115" y="287.8678">Del</tspan><tspan x="-7.4948115" y="300.35693">Café</tspan></text>
+  <path d="m37.938 260.17a17.651 16.414 26.417 0 0-15.474 10.738 17.651 16.414 26.417 0 0 11.363 21.504 17.651 16.414 26.417 0 0 21.847-9.6489 17.651 16.414 26.417 0 0-11.363-21.504 17.651 16.414 26.417 0 0-6.3733-1.0893z" fill="none" stroke="#fffefe" stroke-linejoin="round" stroke-width=".25178" style="paint-order:normal"/>
+ </g>
+</svg>
